@@ -1,9 +1,21 @@
 import React from 'react'
+import Login from "./login/Login";
+import Signup from "./signup/Signup";
 
-const LogOrSign = () => {
+import "../../main.css";
+import "./LogOrSign.css";
+
+
+
+const LogOrSign = ({setIsLoggedIn, setLoggedUser}) => {
   return (
-    <div>LogOrSign</div>
+    <div className="flex flex-column container">
+      <div className="flex flex-row inner-container logOrSign-container">
+        <Login setLoggedUser={setLoggedUser} setIsLoggedIn={setIsLoggedIn}/>
+        <Signup setLoggedUser={setLoggedUser} setIsLoggedIn={setIsLoggedIn}/>
+      </div>
+    </div>
   )
-}
+};
 
-export default LogOrSign
+export default LogOrSign;
