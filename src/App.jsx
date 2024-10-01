@@ -1,12 +1,20 @@
 import './App.css'
+import React, { Component } from 'react';
+import Header from './components/header/Header';
 
 function App() {
 
   return (
     <>
-      <p>hello world</p>
+    <div className="App">
+      <Header />
+      {Component}
+    </div>
     </>
   )
 }
 
-export default App
+
+export default App;
+
+
