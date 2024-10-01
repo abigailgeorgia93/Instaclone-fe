@@ -7,7 +7,7 @@ import "./LogOrSign.css";
 
 
 
-const LogOrSign = ({setLoggedIn, setLoggedUser}) => {
+const LogOrSign = ({setIsLoggedIn, setLoggedUser}) => {
   return (
     <div className="flex flex-column container">
       <div className="flex flex-row inner-container logOrSign-container">
