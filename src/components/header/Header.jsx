@@ -1,19 +1,16 @@
-import { Link } from "react-router-dom"
-import './Header.css';  
+import './Header.css';
+import logo from '../../assets/Instadog.png'; 
 
 const Header = () => {
   return (
     <header className="header">
-      <h1>INSTADOG</h1>
-      <nav>
-        <ul>
-
-          <li><Link to="/">SignUp</Link></li>
-          <li><Link to="/images">Images</Link></li>
-        </ul>
+      <img src={logo} alt="Instadog Logo" className="logo" />
+      <nav className="nav">
+        <a href="/" className="nav-link">Home</a>
+        
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

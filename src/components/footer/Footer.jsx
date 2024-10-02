@@ -1,12 +1,11 @@
-import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
   return (
-    <div>
-      <p>© 2024 Instadog</p>
-</div>
+    <footer className="footer">
+      <p>© 2024 Instadog. All rights reserved.</p>
+    </footer>
   );
 };
 
-export default Footer
+export default Footer;
