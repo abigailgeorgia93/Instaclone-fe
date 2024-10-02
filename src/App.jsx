@@ -1,4 +1,5 @@
 
+
 import { Routes, Route } from 'react-router-dom';
 
 import Layout from './components/layout/Layout';
@@ -7,9 +8,15 @@ import ImagesPage from './pages/imagespage/ImagesPage';
 
 import './App.css';
 
+import './App.css'
+import React, { Component } from 'react';
+import Header from './components/header/Header';
+
+
 function App() {
 
   return (
+
 <>
 <div>
     <Layout>
@@ -24,3 +31,18 @@ function App() {
 }
 
 export default App;
+
+    <>
+    <div className="App">
+      <Header />
+      {Component}
+    </div>
+    </>
+  )
+}
+
+
+export default App;
+
+
+
