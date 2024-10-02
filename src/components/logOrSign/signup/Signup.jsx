@@ -12,18 +12,6 @@ const Signup = ({ setLoggedUser, setIsLoggedIn }) => {
     setter(e.target.value);
   };
 
-  const testSign = (username, email, password) => {
-    console.log("test is working");
-    console.log(username, email, password);
-    return {
-      message: "success",
-      user: {
-        id: 1,
-        username: "michael",
-      },
-    };
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = await signupFetch(username, email, password);
