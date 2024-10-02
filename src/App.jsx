@@ -1,5 +1,3 @@
-
-
 import { Routes, Route } from 'react-router-dom';
 
 import Layout from './components/layout/Layout';
@@ -7,28 +5,19 @@ import LandingPage from './pages/landingpage/LandingPage';
 import ImagesPage from './pages/imagespage/ImagesPage';
 
 import './App.css';
-
-import './App.css'
-import React, { Component } from 'react';
-import Header from './components/header/Header';
-
+import React from 'react';
 
 function App() {
-
   return (
-
-<>
-<div>
-    <Layout>
-      <Routes>
+    <>
+      <Layout>
+        <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/images" element={<ImagesPage />} />     
-      </Routes>
-    </Layout>
-</div>
-</>
-  )
+          <Route path="/images" element={<ImagesPage />} />
+        </Routes>
+      </Layout>
+    </>
+  );
 }
-
 
 export default App;
