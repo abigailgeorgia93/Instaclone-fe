@@ -8,6 +8,10 @@ import './App.css';
 import React from 'react';
 
 function App() {
+  const imageList = [
+    {src: 'https://unsplash.com/s/photos/dogs'}
+  ]
+  
   return (
     <>
       <Layout>
