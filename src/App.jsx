@@ -30,19 +30,5 @@ function App() {
   )
 }
 
-export default App;
-
-    <>
-    <div className="App">
-      <Header />
-      {Component}
-    </div>
-    </>
-  )
-}
-
 
 export default App;
-
-
-
