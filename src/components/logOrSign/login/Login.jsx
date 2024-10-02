@@ -1,12 +1,9 @@
 // import React from 'react'
 import {useState} from "react";
 
-//Figure out what needs to go here
-// import {loginFetch} from "../../../fetch";
+import { loginFetch } from "../../../utils/fetch";
 
 import "./Login.css";
-
-
 
 const Login = ({setLoggedUser, setIsLoggedIn}) => {
   const [username, setUsername] = useState("");
@@ -27,7 +24,7 @@ const Login = ({setLoggedUser, setIsLoggedIn}) => {
     }
   };
 
-  const handleSumbit  = async (e) => {
+  const handleSubmit  = async (e) => {
     e.preventDefault();
     const data = await loginFetch(username, password);
     if (data.message === "success") {
@@ -39,7 +36,7 @@ const Login = ({setLoggedUser, setIsLoggedIn}) => {
   return (
     <div className="flex flex-column login">
       <form
-        onSubmit={(e) => handleSumbit(e)}
+        onSubmit={(e) => handleSubmit(e)}
         className="flex flex-column login-form"
       >
         <h3>Login</h3>
