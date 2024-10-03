@@ -9,7 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  width: 100%;
+  width: 97%;
 }
 
 /* Logo on the left */
@@ -46,9 +46,9 @@
 .nav-icons {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 20px; /* Space between elements */
+  gap: 1px; /* Space between elements */
 }
 
 .welcome-message {
