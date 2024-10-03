@@ -7,13 +7,15 @@ import ImagesPage from './pages/imagespage/ImagesPage';
 import './App.css';
 import React from 'react';
 
-function App() {
+function App() { 
+  const [images, setImages] = useState([]);
+  
   return (
     <>
       <Layout>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/images" element={<ImagesPage />} />
+          <Route path="/images" element={<ImagesPage images={images} setImages={setImages}/>} />
         </Routes>
       </Layout>
     </>
