@@ -1,6 +1,6 @@
 import "./ImagesCard.css";
 
-const ImagesCard = ({ images }) => {
+const ImagesCard = ({ image }) => {
   return (
     <div className="flex flex-column images-card-container red-border">
       <div className="flex flex-column images-card-inner-container">
