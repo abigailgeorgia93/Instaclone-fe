@@ -1,0 +1,28 @@
+.flex {
+    display: flex;
+};
+
+.flex-column {
+    flex-direction: column;
+};
+
+.flex-row {
+    flex-direction: row;
+};
+
+.container {
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+};
+
+.inner-container {
+    height: 80%;
+    width: 80%;
+};
+
+/* Change the word .color to the specific color it will be i.e, blue, red, orange, pink, purple, green */
+.blue-border {
+    border: 3px solid blue;
+};
