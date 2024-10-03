@@ -30,7 +30,7 @@ export const signupFetch = async (username, email, password) => {
   
   export const loginFetch = async (username, password) => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_DOGS_API}`, {
+      const response = await fetch("http://localhost:5004/users/login", {
         method: "POST", 
         mode: "cors",
         headers: {
@@ -57,14 +57,13 @@ export const signupFetch = async (username, email, password) => {
     }
   };
   
-  const apiKey = 'live_9VKA8scyFcDCeclyVvU7ctrjCqDriLceXQNbujGmWz4ei2NK5s7iKUstPWA17daY';
-  const apiURL = 'https://api.thedogapi.com/v1/images/search?limit=5';
-  
-  const fetchDogImages = async () => {
+  export const dogsFetch = async () => {
     try {
-      const response = await fetch(apiURL, {
-        headers: {
-          'x-api-key': apiKey, 
+      const response = await fetch(`${import.meta.env.VITE_DOGS_API}`, {
+        method: "GET",
+        mode: "cors",
+        headers:  {
+            "Content-Type": "application/json",
         },
       });
   
@@ -82,7 +81,6 @@ export const signupFetch = async (username, email, password) => {
     }
   };
   
-  fetchDogImages();
 
     //step 1: write function to fetch dogs called dogsFetch - get requests do not have a body
     //  ``

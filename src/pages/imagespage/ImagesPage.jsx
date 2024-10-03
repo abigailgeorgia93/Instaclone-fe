@@ -1,8 +1,8 @@
-import React from 'react'
+import ImageContainer from "../../components/imageContainer/ImageContainer2"
 
-const ImagesPage = () => {
+const ImagesPage = ({images, setImages}) => {
   return (
-    <div>ImagesPage</div>
+    <div><ImageContainer images={images} setImages={setImages}/></div>
   )
 }
 
