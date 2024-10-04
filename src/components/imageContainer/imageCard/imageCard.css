@@ -5,9 +5,9 @@
 
   }
   
-  .image-display {
-    max-width: 50%;
-    max-height: 50;
-    height: auto;
-    border-radius: 8px;
-  }
+.image-display {
+  max-width: 50%;
+  max-height: 50px;
+  height: auto;
+  border-radius: 8px;
+}
