@@ -80,10 +80,3 @@ export const signupFetch = async (username, email, password) => {
       console.error('Error:', error);
     }
   };
-  
-
-    //step 1: write function to fetch dogs called dogsFetch - get requests do not have a body
-    //  ``
-    //step 2: console.log data  
-    // step 3: return data
-    
