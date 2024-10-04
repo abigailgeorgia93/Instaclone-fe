@@ -3,6 +3,8 @@ import {useState} from "react";
 
 import { loginFetch } from "../../../utils/fetch";
 
+import "../../../general.css"
+
 import "./Login.css";
 
 const Login = ({setLoggedUser, setIsLoggedIn}) => {
@@ -35,7 +37,7 @@ const Login = ({setLoggedUser, setIsLoggedIn}) => {
 
   return (
     <div className="flex flex-column login">
-      <form
+     <form
         onSubmit={(e) => handleSubmit(e)}
         className="flex flex-column login-form"
       >
@@ -44,18 +46,38 @@ const Login = ({setLoggedUser, setIsLoggedIn}) => {
           <input
             onChange={(e) => handleChange(e, setUsername)}
             type="text"
-            placeholder="Username"
-            />
-            <input
+            placeholder="Username..."
+          />
+          <input
             onChange={(e) => handleChange(e, setPassword)}
             type="text"
-            placeholder="Password"
-            />
-            </div>
-            <button type="Submit">Login</button>
-          </form>
+            placeholder="Password..."
+          />
+        </div>
+        <button>Login</button>
+      </form>
         </div>
   )
 };
 
 export default Login;
+
+{/* <form
+className="form-wrapper"
+  onSubmit={(e) => handleSubmit(e)}
+>
+  <h3 className="test">Login</h3>
+  <div className="login-input-wrapper">
+    <input
+      onChange={(e) => handleChange(e, setUsername)}
+      type="text"
+      placeholder="Username"
+      />
+      <input
+      onChange={(e) => handleChange(e, setPassword)}
+      type="text"
+      placeholder="Password"
+      />
+      </div>
+      <button type="Submit">Login</button>
+    </form> */}
