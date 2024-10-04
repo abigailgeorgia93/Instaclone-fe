@@ -15,12 +15,14 @@ const Signup = ({ setLoggedUser, setIsLoggedIn }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = await signupFetch(username, email, password);
-
-
-if (data.message === "success"){
-      setLoggedUser(data);
+    setLoggedUser(data);
       setIsLoggedIn(true);
-}
+
+
+// if (data.message === "success"){
+//       setLoggedUser(data);
+//       setIsLoggedIn(true);
+// }
   };
 
   return (
