@@ -15,4 +15,3 @@ const ImagesCard = ({ image }) => {
 
 export default ImagesCard;
 
-// to access the url, use image.url on line 9.
