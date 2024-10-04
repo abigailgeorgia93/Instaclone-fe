@@ -1,4 +1,5 @@
 export const signupFetch = async (username, email, password) => {
+  console.log(username, email, password);
     try {
       const response = await fetch("http://localhost:5004/users/signup", {
         method: "POST", 
@@ -12,10 +13,11 @@ export const signupFetch = async (username, email, password) => {
           password: password,
         }),
       });
+      console.log("response", response);
   
-      if (!response.ok) {
-        throw new Error(`Signup failed: ${response.statusText}`);
-      }
+      // if (!response.ok) {
+      //   throw new Error(`Signup failed: ${response.statusText}`);
+      // }
   
       const data = await response.json();
       console.log("data in signupFetch:", data);

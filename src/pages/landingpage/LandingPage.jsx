@@ -1,14 +1,11 @@
-import React from 'react'
-import LogOrSign from "./components/logOrSign/LogOrSign";
+import LogOrSign from "../../components/logOrSign/LogOrSign";
 
-const LandingPage = () => {
+const LandingPage = ({setLoggedUser, setIsLoggedIn}) => {
   return (
     <div>
-
-      
+      <LogOrSign setLoggedUser={setLoggedUser} setIsLoggedIn={setIsLoggedIn} /> 
     </div>
   )
-}
+};
 
-export default LandingPage
-
+export default LandingPage;
