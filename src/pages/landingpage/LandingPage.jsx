@@ -1,4 +1,5 @@
 import React from 'react'
+import LogOrSign from "./components/logOrSign/LogOrSign";
 
 const LandingPage = () => {
   return (

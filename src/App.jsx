@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Layout from './components/layout/Layout';
 import LandingPage from './pages/landingpage/LandingPage';
 import ImagesPage from './pages/imagespage/ImagesPage';
-
+import LogOrSign from "./components/logOrSign/LogOrSign";
 import './App.css';
 import React from 'react';
 
