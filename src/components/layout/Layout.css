@@ -3,6 +3,9 @@
   margin: 0; 
   padding: 0; 
   font-family: 'Poppins', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .layout-container {
@@ -10,7 +13,7 @@
   flex-direction: column;
   min-height: 100vh; 
   min-width: 210vh;
-  background-color: #ffffff;
+  background-color:whitesmoke;
   color: purple;
 }
 
